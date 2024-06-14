@@ -1,8 +1,6 @@
 // src/StudentList.js
-
 // eslint-disable-next-line react/prop-types
-const StudentList = ({ students = [] }) => {
-
+const StudentListApp = ({ students = [] }) => {
     return (
       <div className="container mt-4">
         <h2 className="mb-4">Student List</h2>
@@ -30,6 +28,5 @@ const StudentList = ({ students = [] }) => {
         </table>
       </div>
     );
-  };
-  
-  export default StudentList;
+  }; 
+  export default StudentListApp ;

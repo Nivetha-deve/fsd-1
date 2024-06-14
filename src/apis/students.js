@@ -5,4 +5,4 @@ const getAllStus =async () => {
     return await response.json()
 }
 
-export default  getAllStus;
+export  { getAllStus };
