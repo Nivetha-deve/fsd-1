@@ -6,7 +6,7 @@ const Register = () => {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
-    const [role, setRole] = useState("");
+    const [role, setRole] = useState("Teacher");
 
     const isAuthenticated = Boolean(localStorage.getItem("isAuthenticated"))
 
@@ -23,7 +23,7 @@ const Register = () => {
     };
 
     if(isAuthenticated){
-       <Navigate to="/" />;
+       return <Navigate to="/" />;
     }
 
     return(

@@ -21,6 +21,7 @@ const Login = () => {
 
         if(data.code === 1){
             localStorage.setItem("isAuthenticated",true);
+            localStorage.setItem("token",data.token);
             navigate("/")//redirect to home page
         }else {
             alert("please check your credentials");
@@ -28,7 +29,7 @@ const Login = () => {
     };
 
     if(isAuthenticated){
-        <Navigate to="/" />
+        return <Navigate to="/" />
     }
 
     return (
