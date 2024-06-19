@@ -35,6 +35,12 @@ const verifyAccount = async (token) => {
         },
     });
     return await response.json();
-}
+};
 
-export { userSignup,userSignIn,verifyAccount };
+const samplePromise = new Promise ((resolve) => {
+    setTimeout(() => {
+       resolve({longUrl: "https://github.com/Nivetha-deve"});
+    },4000)
+});
+
+export { userSignup,userSignIn,verifyAccount, samplePromise};

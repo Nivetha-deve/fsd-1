@@ -6,6 +6,7 @@ import Login from "./login/Login.jsx";
 import Register from "./register/Register.jsx";
 import Home from "./home/Home.jsx";
 import VerifyAccount from "./verify-account/VerifyAccount.jsx";
+import Redirect from "./redirect-url/Redirect.jsx";
 
 const AppRoutes = () => {
     return(
@@ -16,6 +17,7 @@ const AppRoutes = () => {
         <Route path="/students" element={<ProtectedRoute component= {<StudentListApp />} />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/verify-account" element={<VerifyAccount />} />
+        <Route path="/redirect-url" element={<Redirect/>} />
         <Route path="/register" element={<Register />} />
         </Routes>
         </BrowserRouter>
